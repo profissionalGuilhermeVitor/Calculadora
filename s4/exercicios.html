@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function media(array){
+            let a = 0
+            for(let i =0;i<array.length;i++){
+                a+=array[i]
+            }
+            return(a/array.length)
+        }
+        function maior(array){
+            let a = 0
+            
+            for(let i =0;i<array.length;i++){
+
+                if(a>array[i]){
+                    
+                    continue
+                }
+                else{
+                    a= array[i]
+                    
+                }
+            }
+            return a
+        }
+        var aux =[]
+        var input = window.prompt("Digite").split(",")
+        for(const i of input){
+            if(i==","){
+                continue
+            }
+            else{
+                aux.push(Number(i))
+            }
+            
+        }
+        console.log("A média é : ", media(aux))
+        console.log("O maior número é: ", maior(aux))
+    </script>
+</body>
+</html>

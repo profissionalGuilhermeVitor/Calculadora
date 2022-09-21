@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    padding: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    scrollbar-width: none;
+    height: 100vh;
+}
+.gallery-wrapper::-webkit-scrollbar{
+    display: none;
+}
+.gallery-wrapper{
+    overflow-x: auto;
+
+}
+.gallery{
+    display: flex;
+}
+img{
+    width: 100vw;
+    height: 100vh;
+}
+.arrow-left,.arrow-right{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    background-color: pink;
+    width: 30px;
+    height: auto;
+    color: rgb(24, 135, 232);
+    border: none;
+    cursor: pointer;
+    height: 100vh;
+}
+
+.arrow-right{
+    position: absolute;
+    left: auto;
+    right: 0;
+}

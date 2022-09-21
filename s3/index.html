@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=7, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+<title>Document</title>
+<body>
+    
+    <header>
+        <nav>
+            <a href="https://profissionalguilhermevitor.github.io/HospedagemSiteCompleto/index2.html" id="logo"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-align-top" viewBox="0 0 16 16">
+                <rect width="4" height="12" rx="1" transform="matrix(1 0 0 -1 6 15)"/>
+                <path d="M1.5 2a.5.5 0 0 1 0-1v1zm13-1a.5.5 0 0 1 0 1V1zm-13 0h13v1h-13V1z"/>
+              </svg></a>
+
+            <div class="mobile-menu">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="">Lore</a></li>
+                <li><a href="">Filmes</a></li>
+                <li><a href="">Livros</a></li>
+                <li><a href="">Artes</a></li>
+                <li><a href="">Anéis do Poder</a></li>
+                <li><a href="">Filosofia Tolkeniana</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <section class="sc-1">
+        <img src="imgs/sc1.jpeg" alt="">
+        <div>
+            <h1><a href="">É Hoje!!!!</a></h1>
+            <p><a href="">Confira nosso esquenta de hoje para a fantástica série baseada no universo de J.R.R. Tolkien</a></p>
+        </div>
+    </section>
+    <section class="sc-1">
+        <img src="imgs/sc1.jpeg" alt="">
+        <div>
+            <h1><a href="">É Hoje!!!!</a></h1>
+            <p><a href="">Confira nosso esquenta de hoje para a fantástica série baseada no universo de J.R.R. Tolkien</a></p>
+        </div>
+    </section>
+    <script>
+        const mobileMenu = document.querySelector(".mobile-menu")
+        mobileMenu.addEventListener("click",click)
+        const navList = document.querySelector(".nav-list")
+        const active = "active"
+       
+        function click(){
+            navList.classList.toggle(active)
+            mobileMenu.classList.toggle(active)
+        }
+    </script>
+</body>
+</html>

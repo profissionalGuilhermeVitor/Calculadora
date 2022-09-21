@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .geral{
+            background-color: aquamarine;
+            width: fit-content;
+        }
+        #resultado{
+            background-color: rgb(88, 159, 221);
+            height: 25px;
+            
+        }
+
+        .media{
+            height: 110px;
+        }
+        button{
+            width: 50px;
+        }
+    </style>
+    <div class="geral">
+        <p id="resultado"></p>
+            <div>
+                <table>
+                    <tr >
+                        <td ><button onclick="insert('1')"class="button">1</button></td>
+                        <td><button onclick="insert('2')"class="button">2</button></td>
+                        <td><button onclick="insert('3')"class="button">3</button></td>
+                        <td><button onclick="insert('+')"class="button">+</button></td>
+                        <td rowspan="4"><button class="media" >Media</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button onclick="insert('4')"class="button">4</button></td>
+                        <td><button onclick="insert('5')"class="button">5</button></td>
+                        <td><button onclick="insert('6')"class="button">6</button></td>
+                        <td><button onclick="insert('-')"class="button">-</button></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><button onclick="insert('7')"class="button">7</button></td>
+                        <td><button onclick="insert('8')"class="button">8</button></td>
+                        <td><button onclick="insert('9')"class="button">9</button></td>
+                        <td><button onclick="insert('/')"class="button">/</button></td>
+                    </tr>
+                    <tr>   
+                        <td><button onclick="insert('*')" class="button">*</button></td>
+                        <td><button onclick="insert(',')"class="button">,</button></td>
+                        <td ><button onclick="error()">Erro</button></td>
+                        <td><button onclick="calcular()">=</button></td>
+                    </tr>
+
+                </table>
+            </div>
+    </div>
+    <script>
+        function error(){
+            alert("Erro")
+        }
+
+        function insert(num){
+            var numero = document.querySelector("#resultado").innerHTML
+            document.querySelector("#resultado").innerHTML = numero + num
+        }
+        function calcular(){
+            var resultado = document.querySelector("#resultado").innerHTML
+            if(resultado){
+                document.querySelector("#resultado").innerHTML = eval(resultado)
+            }
+            
+        }
+        function guardar(par){
+            aux = []
+            aux.push(par)
+        }
+        function soma(array){
+            let aux = 0
+            for (const i of array){
+                aux +=i
+            }
+        }
+        function sub(array){
+            let aux = 0
+            for (const i of array){
+                aux -=i
+            }
+        }
+        function mult(array){
+            let aux = 0
+            for (const i of array){
+                aux *=i
+            }
+        }
+        function div(array){
+            let aux = 0
+            for (const i of array){
+                aux /=i
+            }
+        }
+
+    </script>
+</body>
+</html>

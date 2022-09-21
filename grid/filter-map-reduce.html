@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array = [1,2,31,21,41,1551,11,415,1,1515,1,511,2]
+        document.write(array.join('-'))
+        var number = 4.2103014001231
+        number.toFixed(1)
+        console.log(number.toFixed(1))// Vira string
+        console.log(array.includes(1))//true se incluir e false se não
+        var casa = "UEPA"
+        casa.replace("U","A")
+        console.log(casa)
+        var object = {
+            name:"Edu",
+            temCasa: true,
+            namora:false,
+            nascimento: new Date(2022,09,1)
+        }
+        console.log(JSON.stringify(object))
+
+        const numbers = [12,14,15,320,400,19,45,34,1,12]
+        const gt18 = function(item){
+            return item > 18
+        }
+        let res = numbers.filter(gt18)
+        console.log(res)
+
+        let values = [10,12,34,45]
+        console.log(values.map((item)=>item))
+
+        function callback(acumulator,currentValue,index,array){
+            console.log("Acumulator",acumulator);
+            console.log("CurrentValue",currentValue);
+            console.log("Index",index);
+            console.log("Array",array);
+            return acumulator+2
+        }
+        values.reduce(callback,0)
+
+    </script>
+</body>
+</html>

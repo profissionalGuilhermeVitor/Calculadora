@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+nav{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+
+
+}
+.itens{
+    display: flex;
+    padding: 10px;
+
+}
+.itens li{
+    margin: 10px;
+    list-style: none;
+
+}
+.itens li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+#carousel{
+    font-size: larger;
+}
+.carousel-images{
+height: 65vh;
+background-color: aqua;
+}

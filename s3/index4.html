@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="st1.css">
+</head>
+<body>
+    <div class="menu">
+        <div>Action</div>
+        <div>Another Action</div>
+        <div>Something else here</div>
+        <hr>
+        <div>Separated link</div>
+    </div>
+<div class="button">
+    <div id="line-1"></div>
+    <div id="line-2"></div>
+    <div id="line-3"></div>
+</div>
+<img src="script.js" alt="">
+
+<script src="script.js" type="module">
+    import MobileNavbar from './script.js'
+    const navbar = new MobileNavbar(".button",
+".menu",
+".menu div",
+);
+    navbar.init()
+</script>
+</body>
+</html>

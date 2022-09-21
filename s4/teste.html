@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button class="f">3</button>
+        <butto class="g">4</button>
+        <button class="r">3</button>
+        <button>4</button>
+    </div>
+    <script>
+        aux = []
+        var element = document.querySelectorAll("button")
+        for(i=0;i<element.length;i++){
+        element[i].addEventListener("click",click(element[i]))
+        }
+        function click(array){
+            console.log(array)
+        }
+    </script>
+</body>
+</html>
